@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence>
+
+   <persistence-unit name="Eclipselink_JPA" transaction-type="RESOURCE_LOCAL">
+   
+      <class>SabKhuch.Alpha</class>
+      
+      
+      <properties>
+         <!---<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpadb"/>-->
+         <property name= "javax.persistence.jdbc.url" value = "jdbc:postgresql://localhost:5432/Mappingdb3"/>
+         <property name="javax.persistence.jdbc.user" value="axelor"/>
+         <property name="javax.persistence.jdbc.password" value="axelor"/>
+         <property name="javax.persistence.jdbc.driver" value="rg.postgresql.Driver"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+      </properties>
+      
+   </persistence-unit>
+</persistence>

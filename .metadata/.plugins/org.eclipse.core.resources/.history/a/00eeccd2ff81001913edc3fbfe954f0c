@@ -1,0 +1,40 @@
+package MappingRealtionship;
+import javax.persistence.*;
+
+@Entity
+@Table (name = "RUser1")
+public class Students {
+	
+	@Id
+	private int Uid;
+	private String UserName;
+	
+	public Students() {}
+	
+	public Students(int Uid, String UserName) {
+		this.Uid = Uid; this.UserName=UserName;
+	}
+	
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public int getUid() {
+		return Uid;
+	}
+	public void setUid(int uid) {
+		Uid = uid;
+	}
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	@OneToOne
+	public Address address;
+}

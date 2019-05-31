@@ -1,0 +1,21 @@
+package MappingRelation2;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		
+		Session s =new Configuration().configure().buildSessionFactory().openSession();
+		s.beginTransaction();
+		
+		List<Employee> EmployeeId = s.createQuery("From Employee").list();
+		
+		EmployeeId.forEach(System.out::println);
+
+	}
+
+}

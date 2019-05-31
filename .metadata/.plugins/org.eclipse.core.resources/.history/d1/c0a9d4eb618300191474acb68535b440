@@ -1,0 +1,16 @@
+package MappingRelation2;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		
+		Session s =new Configuration().configure().buildSessionFactory().openSession();
+		s.beginTransaction();
+		Employee e=s.get(Empolyee class, 1);
+
+	}
+
+}

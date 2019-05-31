@@ -1,0 +1,22 @@
+package MappingRelation2;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class Testing {
+
+	public static void main(String[] args) {
+		
+		Session s =new Configuration().configure().buildSessionFactory().openSession();
+		s.beginTransaction();
+		Set<Integer> EmployeeId = new HashSet<Integer>();
+		EmployeeId = (Set<Integer>) s.createQuery("select from Employee");
+		
+		EmployeeId.forEach(id->System.out.println("LETS_CHECK_THE_INEVITABLE"+s.get(Employee.class, id).getName()));
+
+	}
+
+}

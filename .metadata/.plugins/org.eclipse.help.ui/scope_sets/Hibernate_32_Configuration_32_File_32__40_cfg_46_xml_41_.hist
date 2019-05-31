@@ -1,0 +1,5 @@
+#Tue May 28 12:32:47 IST 2019
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+org.hibernate.eclipse.help.HibernateWiki.master=true
+expression=Hibernate Configuration File (cfg.xml)

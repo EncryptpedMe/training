@@ -1,0 +1,87 @@
+package MappingRealtionship;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		/*
+		 * Address a1 = new Address(2,"ganesh Nagar","Firozabad"); User u1 = new
+		 * User(201,"SHivank Gupta"); a1.setUser(u1);
+		 * 
+		 * try{ Session s = new
+		 * Configuration().configure().buildSessionFactory().openSession();
+		 * s.beginTransaction(); s.save(u1); s.save(a1); s.getTransaction().commit(); }
+		 * catch (Exception e) { System.out.println("Bardi Error found: "+e); }
+		 */
+
+		
+		  
+		  Students s1 = new Students(1,"Sajal Gupta",22); 
+		  Students s2 = new Students(2,"Shivank Gupta",19); 
+		  Students s3 = new Students(3,"Prajjwal",21);
+		  Students s4 = new Students(4,"xyz",52); 
+		  Points p1 = new Points(1,95);
+		  Points p2 = new Points(4,92); 
+		  Points p3 = new Points(3,90);
+		  p1.setStudent(s1); p2.setStudent(s2); p3.setStudent(s3);
+		  try { 
+			  Session ses1 = new
+			  Configuration().configure().buildSessionFactory().openSession();
+			  ses1.beginTransaction(); 
+			  ses1.save(s1); 
+			  ses1.save(s2); 
+			  ses1.save(s3);
+		      ses1.save(s4); 
+			  //ses1.save(p1); ses1.save(p2); ses1.save(p3);
+		  ses1.getTransaction().commit(); 
+		  } catch(Exception e) {
+		  System.out.println("Bardi Error found: "+e);} 
+		 
+
+		
+		/*
+		 * Session session = new
+		 * Configuration().configure().buildSessionFactory().openSession();
+		 * session.beginTransaction();
+		 * 
+		 * Accounts account1 = new Accounts(); account1.setAccountId(1);
+		 * account1.setAccountNumber("Account detail 1");
+		 * 
+		 * Accounts account2 = new Accounts(); account2.setAccountId(2);
+		 * account2.setAccountNumber("Account detail 2");
+		 * 
+		 * Accounts account3 = new Accounts(); account3.setAccountId(3);
+		 * account3.setAccountNumber("Account detail 3");
+		 * 
+		 * //Add new Employee object Employee firstEmployee = new Employee();
+		 * firstEmployee.setEmployeeId(1);
+		 * firstEmployee.setEmail("demo-user-first@mail.com");
+		 * firstEmployee.setFirstName("demo-one");
+		 * firstEmployee.setLastName("user-one");
+		 * 
+		 * Employee secondEmployee = new Employee(); secondEmployee.setEmployeeId(2);
+		 * secondEmployee.setEmail("demo-user-second@mail.com");
+		 * secondEmployee.setFirstName("demo-two");
+		 * secondEmployee.setLastName("user-two");
+		 * 
+		 * Set<Accounts> accountsOfFirstEmployee = new HashSet<Accounts>();
+		 * accountsOfFirstEmployee.add(account1); accountsOfFirstEmployee.add(account2);
+		 * 
+		 * Set<Accounts> accountsOfSecondEmployee = new HashSet<Accounts>();
+		 * accountsOfSecondEmployee.add(account3);
+		 * 
+		 * firstEmployee.setAccounts(accountsOfFirstEmployee);
+		 * secondEmployee.setAccounts(accountsOfSecondEmployee); //Save Employee
+		 * session.save(firstEmployee); session.save(secondEmployee);
+		 */
+		  
+		  //session.getTransaction().commit();
+		 
+
+	}
+}

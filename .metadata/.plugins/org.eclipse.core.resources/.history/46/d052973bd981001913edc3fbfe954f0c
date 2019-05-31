@@ -1,0 +1,44 @@
+package HibernateProject2;
+import javax.persistence.*;
+@Entity
+@Table(name = "StudentInfo")
+public class MyEntity {
+	@Id
+	@Column(name = "Id")
+	private int id;
+	
+	@Column(name = "Name")
+	private String name;
+	
+	@Column(name = "Marks")
+	private int marks;
+
+	MyEntity(int id, String name, int marks){
+		this.id = id;this.name = name;this.marks = marks;
+	}
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	
+	
+}

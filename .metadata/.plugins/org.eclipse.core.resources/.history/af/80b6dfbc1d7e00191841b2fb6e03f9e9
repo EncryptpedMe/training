@@ -1,0 +1,20 @@
+interface I{
+	static void show(String str) {
+		System.out.println("This is default function");
+	}
+}
+
+
+class Ch implements I{
+	/*public void show(String str) {
+		System.out.println(str);
+	}*/
+}
+
+public class CheckDefault{
+	
+	public static void main(String[] args) {
+		I.show("Sajal");
+	}
+
+}
