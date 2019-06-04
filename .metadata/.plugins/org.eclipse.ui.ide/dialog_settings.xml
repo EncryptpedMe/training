@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/axelor/Desktop/TrainingAllinOne"/>
+		<item value="/home/axelor/Desktop/training/hibernate-test-project-many-to-many/hibernate-test-project"/>
 		<item value="/home/axelor/eclipse-workspace/LambdaExpressionTraining"/>
 		<item value="/home/axelor/Desktop/Practice/GitPractice1"/>
 		<item value="/home/axelor/Desktop/demoGradle"/>
@@ -21,5 +23,19 @@
 		</list>
 	</section>
 	<section name="BasicNewProjectResourceWizard">
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode/&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="663"/>
+			<item key="DIALOG_Y_ORIGIN" value="189"/>
+			<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>
+		</section>
 	</section>
 </section>

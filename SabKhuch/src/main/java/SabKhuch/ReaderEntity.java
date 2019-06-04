@@ -37,7 +37,7 @@ public class ReaderEntity implements Serializable {
 	private String lastName;
 
 	@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "READER_SUBSCRIPTIONS", joinColumns = {
+	@JoinTable(name = "READER_ON_SUBSCRIPTIONS", joinColumns = {
 			@JoinColumn(referencedColumnName = "ID") }, inverseJoinColumns = {
 					@JoinColumn(referencedColumnName = "ID") })
 	private Set<SubscriptionEntity> subscriptions;

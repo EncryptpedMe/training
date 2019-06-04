@@ -6,21 +6,28 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="save"/>
+		<item key="selection" value="Student_"/>
 		<list key="findhistory">
+			<item value="Customer"/>
+			<item value="Custumer_"/>
+			<item value="Custumer"/>
+			<item value="readers"/>
+			<item value="get"/>
 			<item value="save"/>
 			<item value="Save"/>
 			<item value="EmployeeEntity"/>
 			<item value="AccountEntity"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Student_"/>
+			<item value="Student"/>
 			<item value="Employee"/>
 			<item value="Accounts"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="708"/>
-		<item key="DIALOG_Y_ORIGIN" value="230"/>
+		<item key="DIALOG_X_ORIGIN" value="1195"/>
+		<item key="DIALOG_Y_ORIGIN" value="229"/>
 		<item key="DIALOG_WIDTH" value="356"/>
 		<item key="DIALOG_HEIGHT" value="451"/>
 		<item key="DIALOG_FONT_NAME" value="1|Cantarell|11.0|0|GTK|1|"/>

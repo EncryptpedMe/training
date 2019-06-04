@@ -16,6 +16,7 @@
 		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.buildship.ui.wizard.project.creation"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.buildship.ui.creationwizards"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
 		</list>
 	</section>
 	<section name="InstallationDialogSettings">

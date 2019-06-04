@@ -49,7 +49,7 @@ public class Students {
 	}
 
 	
-	@OneToOne(mappedBy = "student")
+	@OneToOne(mappedBy = "student",cascade=CascadeType.ALL)
 	Points point;
 	
 	public Students() {}

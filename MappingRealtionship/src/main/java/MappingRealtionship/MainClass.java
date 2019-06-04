@@ -32,12 +32,11 @@ public class MainClass {
 		  try { 
 			  Session ses1 = new
 			  Configuration().configure().buildSessionFactory().openSession();
-			  ses1.beginTransaction(); 
-			  ses1.save(s1); 
-			  ses1.save(s2); 
-			  ses1.save(s3);
-		      ses1.save(s4); 
-			  //ses1.save(p1); ses1.save(p2); ses1.save(p3);
+			
+			   ses1.beginTransaction(); ses1.save(s1); ses1.save(s2); ses1.save(s3);
+			 /* ses1.save(s4);
+			 */
+			  ses1.save(p1); ses1.save(p2); ses1.save(p3);
 		  ses1.getTransaction().commit(); 
 		  } catch(Exception e) {
 		  System.out.println("Bardi Error found: "+e);} 

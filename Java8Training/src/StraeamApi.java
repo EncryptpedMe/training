@@ -41,7 +41,8 @@ public class StraeamApi {
 		    //int even = 
 		    //number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
 		  
-		    System.out.println(number.stream().filter(i->i%2==0).findFirst());
+		    List<Integer> l  = new ArrayList<>();
+		    l = number.stream().filter(i->i%2==0).collect(Collectors.toList())
 		
 		
 			/*List <Integer> values = Arrays.asList(1,2,3,4,5,6);

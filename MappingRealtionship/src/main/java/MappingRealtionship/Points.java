@@ -1,4 +1,4 @@
-package MappingRealtionship;
+	package MappingRealtionship;
 import javax.persistence.*;
 
 @Entity
